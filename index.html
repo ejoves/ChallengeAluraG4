@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <script type="text/javascript" src="codigo.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet">
+    <title>Cifrado de Texto</title>
+</head>
+<body>
+    <header>
+        <img src="Logo.png" alt="Logo aplicacion Cifrado de texto">
+    </header> 
+
+    <main>
+        <section>
+            <textarea id="textoEncriptado" cols="25" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+            <div>
+                <h6 class="Informacion">Sólo letras minusculas y sin acento</h6>
+            </div>
+            <div class="contenedor_botones">
+                <button type="button" id="botonEncriptado">Encriptar</button>
+                <button type="button" id="botonDesenncriptado">Desenncriptar</button>
+            </div> 
+        </section>
+        <section>
+            <textarea id="textoDesencriptado" cols="20" rows="14"></textarea>
+            <div class="contenedor_subtitulo">
+                <h6 class="subtitulo">No se encontró ningún mensaje</h3>
+                <h6 class="parrafo">Escriba el texto que desea encriptar o desencriptar</p>
+            </div>
+            <div>
+                <button type="button" id="botonCopiar">Copy</button>
+            </div>
+
+        </section> 
+    
+    </main>
+    <footer>
+        By: Edward Joves -ejoves
+    </footer>
+
+</body>
+<script>
+    var btn = document.querySelector("#botonEncriptado");
+    btn.onclick = encriptar;
+
+    var btn2 = document.querySelector("#botonDesenncriptado");
+    btn2.onclick = desencriptar;
+
+    var btn3 = document.querySelector("#botonCopiar");
+    btn3.onclick = copiar;
+
+</script>
+
+</html
+
