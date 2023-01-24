@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -33,7 +33,7 @@
                 <h6 class="parrafo">Escriba el texto que desea encriptar o desencriptar</p>
             </div>
             <div>
-                <button type="button" id="botonCopiar">Copy</button>
+                <button type="button" id="botonCopiar" onclick="copiar()">Copy</button>
             </div>
 
         </section> 
@@ -50,9 +50,6 @@
 
     var btn2 = document.querySelector("#botonDesenncriptado");
     btn2.onclick = desencriptar;
-
-    var btn3 = document.querySelector("#botonCopiar");
-    btn3.onclick = copiar;
 
 </script>
 

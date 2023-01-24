@@ -29,17 +29,10 @@ function desencriptar(){
     }    
     
 function copiar(){
-        var contenido = document.querySelector("#textoDesencriptado");
-        contenido.selected;
+        var contenido = document.getElementById("textoDesencriptado");
+        navigator.clipboard.writeText(contenido.value);
         document.execCommand("copy");
     }
-
-    
-
-    /*let texArea = document.getElementById("#textoDesencriptado");
-    let button = document.getElementById("#botonCopiar");
-    navigator.clipboard.writeText(texArea.textContent);
-    button.textContent = "copiado";*/
 
 
 
